@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    background-color: #159;
+    max-width: 500px;
+    display: flex;
+    list-style: none;
+}
+.flex-item{
+    background-color: antiquewhite;
+    color: black;
+    width: 50px;
+    height: 50px;
+    margin:5px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* WARP*/
+.no-warp{
+flex-wrap: nowrap;
+}
+.warp{
+flex-wrap: wrap;
+}
+.warp-reverse{
+flex-wrap: wrap-reverse;
+}
