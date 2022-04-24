@@ -21,16 +21,6 @@
 }
 
 .flow{
-    flex-flow: row-reverse wrap-reverse;
+    flex-flow: row wrap;
 }
 
-/* WARP*/
-.no-warp{
-flex-wrap: nowrap;
-}
-.warp{
-flex-wrap: wrap;
-}
-.warp-reverse{
-flex-wrap: wrap-reverse;
-}

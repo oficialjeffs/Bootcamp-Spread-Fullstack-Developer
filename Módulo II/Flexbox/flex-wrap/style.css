@@ -22,12 +22,12 @@
 
 
 /* WARP*/
-.no-warp{
+.no-wrap{
 flex-wrap: nowrap;
 }
-.warp{
+.wrap{
 flex-wrap: wrap;
 }
-.warp-reverse{
+.wrap-reverse{
 flex-wrap: wrap-reverse;
 }
