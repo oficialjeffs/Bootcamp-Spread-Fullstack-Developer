@@ -45,25 +45,38 @@
 
         .column{
             flex-direction: column;
+
         }
-    </style>
+
+        .central{
+            height: 400px;
+            justify-content: center;
+            
+            
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+</style>
 </head>
 <body>
-
+    
     <h1>ROW</h1>
     <p>Center</p>
     <section class="container center">
         <div class="item">Item 1</div>
         <div class="item">Perceba que agora esse texto é maior que o anterior, e agora eu estou digitando qualquer coisa só apra ver onde vai dar.</div>
         <div class="item">Lorem ipsum dolor sit amet!</div>
-        </section>
+    </section>
 
     <p>Stretch</p>
     <section class="container stretch">
         <div class="item">Item 1</div>
         <div class="item">Perceba que agora esse texto é maior que o anterior</div>
         <div class="item">Lorem ipsum dolor sit amet!</div>
-        </section>
+    </section>
 
     <p>Flex-Start</p>
     <section class="container flex-start">
@@ -120,6 +133,14 @@
         <div class="item"><br>Item 1</div>
         <div class="item">Perceba que agora esse texto é maior que o anterior</div>
         <div class="item">Lorem ipsum dolor sit amet!</div>
+    </section>
+    
+    <br>
+    <hr>
+
+    <h2>Alinhamento Central à Tela</h2>
+    <section class="container central center">
+        <div class="item">Esse é um texto aletória só para ter um conteúdo de preenchimento mesmo</div>
     </section>
 </body>
 </html>
