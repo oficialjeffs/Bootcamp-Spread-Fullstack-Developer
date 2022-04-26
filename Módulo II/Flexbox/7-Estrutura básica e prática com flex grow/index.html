@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica e prática com flex grow</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: solid 1px;
+            max-width: 400px;
+            margin-bottom: 20px;
+
+        }
+        .item{
+            background-color: #158;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+
+        }
+
+        .flex-grow{
+            flex-grow: 0;
+        }
+
+        .flex-grow1{
+            flex-grow: 1;
+        }
+
+        .flex-grow2{
+            flex-grow: 2;
+        }
+
+        .flex-grow3{
+            flex-grow: 3;
+        }
+
+</style>
+
+</head>
+<body>
+    <p>flex-grow : 0</p>
+    <div class="container">
+        <div class="item flex-grow">A</div>
+        <div class="item flex-grow">B</div>
+        <div class="item flex-grow">C</div>
+        <div class="item flex-grow">D</div>
+    </div>
+
+    <p>flex-grow : 1</p>
+    <div class="container">
+        <div class="item flex-grow1">A</div>
+        <div class="item flex-grow1">B</div>
+        <div class="item flex-grow1">C</div>
+        <div class="item flex-grow1">D</div>
+    </div>
+
+    <p>flex-grow : Alternados</p>
+    <div class="container">
+        <div class="item flex-grow2">ABC</div>
+        <div class="item flex-grow1">B</div>
+        <div class="item flex-grow3">C</div>
+        <div class="item flex-grow0">D</div>
+    </div>
+
+    <p>flex-grow : 3</p>
+    <div class="container">
+        <div class="item flex-grow3">EXEMPLO</div>
+        <div class="item flex-grow3">BBB</div>
+        <div class="item flex-grow3">TESTE1</div>
+        <div class="item flex-grow3">D</div>
+    </div>
+    
+</body>
+</html>
