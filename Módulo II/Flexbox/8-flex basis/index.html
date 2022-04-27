@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex basis</title>
+    <style>
+        
+        .flex-container{
+            max-width: 500px;
+            border: 2px solid;
+            display: flex;
+
+        }
+
+        .item{
+            background-color: #498;
+            color:#fff;
+            text-align: center;
+            margin: 5px;
+
+        }
+
+        .basis-auto{
+            flex-basis: auto;
+            
+        }
+
+        .basis-0{
+            flex-basis: 0;
+            
+        }
+
+        .flex-grow0{
+            flex-grow: 0;
+
+        }
+
+        .flex-grow1{
+            flex-grow: 1;
+
+        }
+
+        .flex-grow2{
+            flex-grow: 2;
+
+        }
+
+        .width-100{
+            width: 100;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p> BASES AUTO </p>
+    <div class="flex-container">
+        <div class="item flex-grow1 basis-auto">JEFFERSON</div>
+        <div class="item flex-grow1 basis-auto">ANA</div>
+        <div class="item flex-grow1 basis-auto">CLAUDIA</div>
+        <div class="item flex-grow1 basis-auto">FULANO DE TAL</div>
+    </div>
+
+    <p>BASES 0</p>
+    <div class="flex-container">
+        <div class="item flex-grow1 basis-0">JEFFERSON</div>
+        <div class="item flex-grow1 basis-0">ANA</div>
+        <div class="item flex-grow1 basis-0">CLAUDIA</div>
+        <div class="item flex-grow1 basis-0">FULANO DE TAL</div>
+    </div>
+
+    <p>BASES + WIDTH</p>
+    <div class="flex-container">
+        <div class="item flex-grow1 width-100 flex-grow0">JEFFERSON</div>
+        <div class="item flex-grow1 width-100 flex-grow0">ANA</div>
+        <div class="item flex-grow1 width-100 flex-grow0">CLAUDIA</div>
+        <div class="item flex-grow1 width-100 flex-grow0">FULANO DE TAL</div>
+    </div>
+
+    INCOMPLETO
+
+</body>
+</html>
